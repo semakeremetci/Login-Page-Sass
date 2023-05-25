@@ -1,0 +1,84 @@
+$main-color: white;
+$secondary-color: black;
+
+* {
+  font-family: "Epilogue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../img/foggy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-color;
+    overflow: hidden;
+    h1 {
+      margin-top: -6rem;
+    }
+    section {
+      color: $main-color;
+      padding: 2.2rem 2rem;
+      width: 21rem;
+      background-color: rgba(255, 255, 255, 0.349);
+      justify-content: center;
+      border-radius: 15px;
+      h2 {
+        text-align: center;
+        margin-bottom: 2em;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        .input-field {
+          border-bottom: 2px solid beige;
+          margin-bottom: 2rem;
+          input {
+            width: 90%;
+            border: none;
+            background-color: transparent;
+            padding: 0.3rem;
+            &:focus {
+              border: none;
+              outline: none;
+            }
+          }
+        }
+        .line {
+          padding-bottom: 1.3rem;
+          display: flex;
+          justify-content: space-between;
+          span {
+            display: flex;
+          }
+        }
+        button {
+          padding: 0.6rem;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.svg {
+  width: 1rem;
+  fill: $main-color;
+  float: right;
+}
+a {
+  text-decoration: none;
+  color: $main-color;
+}
