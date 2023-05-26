@@ -9,7 +9,7 @@ body {
   background: url(../img/foggy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   width: 100vw;
   height: 100vh;
 }
@@ -24,7 +24,7 @@ body .container {
   overflow: hidden;
 }
 body .container h1 {
-  margin-top: -6rem;
+  margin-top: -4rem;
 }
 body .container section {
   color: white;
@@ -42,15 +42,19 @@ body .container section form {
   display: flex;
   flex-direction: column;
 }
+body .container section form label {
+  padding: 0.3rem;
+}
 body .container section form .input-field {
   border-bottom: 2px solid beige;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 body .container section form .input-field input {
   width: 90%;
   border: none;
   background-color: transparent;
   padding: 0.3rem;
+  font-size: medium;
 }
 body .container section form .input-field input:focus {
   border: none;
@@ -60,15 +64,24 @@ body .container section form .line {
   padding-bottom: 1.3rem;
   display: flex;
   justify-content: space-between;
+  font-size: small;
 }
 body .container section form .line span {
   display: flex;
+  gap: 0.2rem;
+  align-items: center;
 }
 body .container section form button {
   padding: 0.6rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+}
+body .container section form p {
+  font-size: small;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .svg {
